@@ -1,2 +1,1 @@
-# MyBlog-hugo
-My Blog
+Blog powered by hugo
