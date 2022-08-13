@@ -6,5 +6,5 @@ COPY . /src
 RUN mkdir -p /blog
 RUN /bin/hugo -s /src -d /blog
 
-FROM lipanski/docker-static-website:latest
-COPY --from=build /blog .
+FROM joseluisq/static-web-server:latest
+COPY --from=build /blog /public
