@@ -1,4 +1,4 @@
-baseURL: https://blog.hulb.club
+baseURL:
 title: Winterfall
 paginate: 10
 theme: PaperMod
