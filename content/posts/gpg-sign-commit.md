@@ -1,7 +1,7 @@
 ---
 title: "GPG Sign Commit"
 date: 2022-08-14T22:16:52+08:00
-lastmod: 2022-08-14T22:16:52+08:00
+lastmod: 2022-08-27T14:13:52+08:00
 draft: false
 keywords: ["gpg", "git", "signature"]
 description: ""
@@ -35,6 +35,18 @@ gpg --full-generate-key
 git config user.signingkey <id> # 设置用来签名commit的key id
 git config commit.gpgsign true # 设置git自动对每次commit都签名，如果不自动则每次commit需要带上 -S
 ```
+
+当签名时遇到错误：
+```
+error: gpg failed to sign the data 
+fatal: failed to write commit object
+```
+尝试如下：
+```
+export GPG_TTY=$(tty)
+```
+或是将这句放到 ~/.bashrc中，windows下不会有这个问题。
+
 
 #### github 上传公钥
 本地git提交commit签名后，要让github能识别到对应的签名需要在github设置中添加gpg公钥。使用`--export`可以显示公钥。
