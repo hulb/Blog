@@ -1,4 +1,4 @@
-baseURL:
+baseURL: "blog.hulb.club"
 title: Winterfall
 paginate: 10
 theme: PaperMod
@@ -75,7 +75,7 @@ params:
 
   socialIcons:
     - name: telegram
-      url: "https://t.me/hulb4tg"
+      url: "https://t.me/hulbx_"
     - name: github
       url: "https://github.com/hulb"
 
