@@ -1,7 +1,7 @@
 ---
 title: "尝试构建Openssl的见闻"
 date: 2024-07-25T21:00:47+08:00
-draft: true
+draft: false
 ---
 我的服务器环境是redhat 8.4，上面的openssl版本比较老是1.1.1g。最近关注openssh漏洞实留意到openssl其实也应该使用比较新的版本才好，但是考虑到兼容性风险，想着升级到官方1.1.1w版本。但是没有找到现成的包，于是自己编译构建。从中学习到了redhat backporting机制，记录一下。
 <!--more-->

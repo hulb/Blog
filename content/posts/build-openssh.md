@@ -1,7 +1,7 @@
 ---
 title: "源码编译linux OpenSSH"
 date: 2024-07-25T21:35:45+08:00
-draft: true
+draft: false
 ---
 针对OpenSSH的安全漏洞，官方都会发布源码的新版本。记录一下如何通过源码编译rpm包。
 <!--more-->
