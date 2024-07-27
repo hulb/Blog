@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -18,7 +18,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Winterfall
   description: "A private corner"
-  keywords: [Blog, Life, Coder]
+  keywords: [hulb, Blog, Life, Coder]
   author: hulb
   # author: ["Me", "You"] # multiple authors
   images: ["https://avatars2.githubusercontent.com/u/7296536"]
@@ -28,20 +28,21 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: true
-  ShowPostNavLinks: true
+  ShareButtons: ["linkedin", "twitter", "telegram", "whatsapp", "reddit", "facebook"]
+  ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: true
+  comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
 
-  # assets:
+  assets:
     # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableFingerprinting: true
     # favicon: "<link / abs url>"
     # favicon16x16: "<link / abs url>"
     # favicon32x32: "<link / abs url>"
@@ -70,14 +71,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "欢迎光临"
+    Content: 浏览我记录的一些笔记和日常
 
   socialIcons:
-    - name: telegram
-      url: "https://t.me/hulbx_"
     - name: github
       url: "https://github.com/hulb"
+    - name: pgp
+      url: "https://keys.openpgp.org/vks/v1/by-fingerprint/34A6AEFF498351FF3909AFBFD3E3FDD939DD37B7"
 
   # analytics:
   #   google:
@@ -109,10 +110,6 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    # - identifier: categories
-    #   name: categories
-    #   url: /categories/
-    #   weight: 10
     - identifier: tags
       name: Tags
       url: /tags/
@@ -125,7 +122,7 @@ menu:
 pygmentsUseClasses: true
 markup:
     highlight:
-        # anchorLineNos: true
+        anchorLineNos: true
         codeFences: true
         guessSyntax: false
         lineNos: true
